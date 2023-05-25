@@ -17,5 +17,5 @@ The Product add UI  has a dynamic form input which showsup when a user selects s
 
 3. Stock View Page!
  Stock View Page gives access for the admin to view list of products in the stock and gives access for removing products from the stocks.
-[Untitled2](https://github.com/nathan-nigussie/5starTrading/assets/91279474/02bb791c-555f-40b8-bc7f-63aa38795936)
+![Untitled2](https://github.com/nathan-nigussie/5starTrading/assets/91279474/02bb791c-555f-40b8-bc7f-63aa38795936)
 
