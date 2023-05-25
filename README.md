@@ -1,7 +1,7 @@
 # 5starTrading
 
 
-A web-app developed with PHP and Javascript. Front end is biult with pure JS whereas PHP is used for the backend.The back end is biult with OOP(opject oriented programming) technique whcih is based on polymorphism approach.no frameworks used. The web app has the interface for storing products information to database and display back the information in separate URL. 
+A web-app developed with PHP and Javascript. Front end is biult with pure JS whereas PHP is used for the backend.The back end is biult with OOP(opject oriented programming) technique which is based on polymorphism approach.no frameworks used. The web app has the interface for storing products information to database and display back the information in separate URL. 
 
 1. Product list page
 The Product list shows list of products in the stock including their respective properties and images. The "Admin" tab on product list page takes the admin to insert products in the stocks and deletes items when required.
