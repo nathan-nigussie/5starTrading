@@ -35,7 +35,7 @@ error_reporting(E_ALL ^ E_NOTICE);
         <div class="header-1">
             <h1> <i class="fas fa-swatchbook "></i> Add Products</h1>
             <button type="button" name="cancel" class="btn btn-danger"
-                onclick="location.href = 'index copy.php';">Cancel</button>
+                onclick="location.href = 'index.php';">Cancel</button>
         </div>
         <div class="header-2"></div>
 
@@ -44,17 +44,6 @@ error_reporting(E_ALL ^ E_NOTICE);
     <!-- header section ends here  -->
 
     <!-- session div starts here  -->
-    <?php
-if (isset($_SESSION['status'])) {
-    ?>
-    <?php echo $_SESSION['status']; ?>
-
-
-    <?php
-
-    unset($_SESSION['status']);
-}
-?>
     <!-- form  section starts here -->
     <div class="container">
         <form id="product_form" class="w-50" method="POST"
@@ -110,7 +99,7 @@ if (isset($_SESSION['status'])) {
                         <select id="productType" name="productType" onChange="myNewFunction(this);">
                             <option id="type_Switcher" value="">Type Switcher
                             </option>
-                            <option id="#DVD" value="DVD">DVD</option>
+                            <option id="#DVD" value="DVD">Electronics</option>
                             <option id="#Furniture" value="Furniture">Furniture</option>
                             <option id="#Book" value="Book">Book</option>
 

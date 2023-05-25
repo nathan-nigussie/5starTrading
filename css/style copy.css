@@ -1,44 +1,7 @@
-/*-------------------------------------------------------------------------------------- 
-	Theme Name: Chamb - Responsive E-commerce HTML5 Template 
----------------------------------------------------------------------------------------- 
-    
-	1. IMPORT FILES
-	2. BASE CSS 
-	3. HEADER
-	   - Logo
-	   - Search Bar
-	4. PAGE CONTENT PRODUCT 
-	5. SECTION
-	   - Products Exciting
-	   - Start Free
-	6. PRODUCT
-	7. FOOTER
-	   - Copyright
-	8. INNER PAGE   
-	   - How it Works
-	   - About Us
-	   - Terms Page
-	   - Cooming Soon
-	   - Category
-	   - Profile
-	   - Pricing
-	   - Product Page
-	   - New Layout css
-	
---------------------------------------------------------------------------------------*/
 
-/*------------------------------------------------------------- 
-	1. IMPORT FILES
--------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/**-- font-family: 'Raleway', sans-serif; --**/
-
-
-/*------------------------------------------------------------- 
-	2. BASE CSS 
--------------------------------------------------------------*/
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -174,7 +137,7 @@ header .navbar-default .navbar-header {
 
 .web-sh.navbar-form input::-moz-placeholder {
 	/* Firefox 19+ */
-	color #474747;
+	color: #474747;
 	opacity: 1;
 }
 
@@ -275,7 +238,7 @@ header .navbar-default .navbar-header {
 
 .top-nav ul li a {
 	color: #fff;
-	font-family: ;
+	
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -433,12 +396,11 @@ header .navbar-default .navbar-header {
 	4. PAGE CONTENT PRODUCT
 -------------------------------------------------------------*/
 
-.page-content-product {}
+
 
 .main-product {
 	background-color: #09284b;
 	background-image: url('../images/bg_main.png');
-	padding-bottom: 180px;
 	background-position: center center;
 }
 
@@ -912,11 +874,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 }
 
-.right-supplier img {}
 
-/*------------------------------------------------------------- 
-	6. PRODUCT
--------------------------------------------------------------*/
 
 .products {
 	padding: 40px 0px 60px 0px;
@@ -924,13 +882,13 @@ header .navbar-default .navbar-header {
 	position: relative;
 }
 
-.main-products {}
+
 
 .main-products h2 {
 	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
 	color: #09294c;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 	font-size: 14px;
 	text-align: center;
 }
@@ -1048,14 +1006,16 @@ header .navbar-default .navbar-header {
 
 .main-footer {
 	background-image: url('../images/footer_bg.png');
-	padding: 55px 0px 0px 0px;
+	padding: 75px 0px 0px 10px;
 	background-size: cover;
 	background-position: center center;
 }
 
 .footer-top {
 	padding-bottom: 55px;
+	padding-top: 5rem;
 	border-bottom: 1px solid #12345b;
+	text-align: center;
 }
 
 .footer-top h2 {
@@ -1196,14 +1156,13 @@ header .navbar-default .navbar-header {
 
 /*-- Copyright --*/
 
-.copyright {
-	background: #ffffff;
-}
+
 
 .copyright p {
 	margin-top: 20px;
 	font-size: 14px;
-	color: #636363;
+	color: #fff;
+	text-align: right;
 }
 
 .copyright p img {

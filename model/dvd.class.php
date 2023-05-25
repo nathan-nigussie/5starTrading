@@ -20,7 +20,7 @@ class dvd extends DbConnector implements tasks
             "INSERT INTO `dvd`(`sku`, `name`, `price`, `size`,`file_name`) VALUES (?,?,?,?,?)"
         );
         $pre_stmt->bind_param(
-            "ssiss",
+            "ssiis",
             $this->sku,
             $this->name,
             $this->price,
@@ -31,7 +31,7 @@ class dvd extends DbConnector implements tasks
         $result = $pre_stmt->execute() or die($this->con->error);
         if ($result) {
             header(
-                  "Location:http://localhost/5StarTrading/view/index copy.php"
+                  "Location:http://localhost/5StarTrading/view/view.php"
             );
         } else {
             error_reporting(E_ERROR | E_PARSE);
@@ -56,7 +56,7 @@ class dvd extends DbConnector implements tasks
     public function deleteRecord()
     {
         $con = new mysqli(HOST, USER, PASS, DB);
-        if (isset($_POST["mass-delete-products-btn"])) {
+        if (isset($_POST["product-delete-id"])) {
             $all_id = $_POST["product-delete-id"];
             $extract_id = implode(",", $all_id);
             $query = "DELETE FROM dvd WHERE id  IN($extract_id)";
@@ -65,14 +65,14 @@ class dvd extends DbConnector implements tasks
                 // $_SESSION["status"] =
                 //     " <div id=\"delete-success-msg\"   class=\"alert alert-success\" role=\"alert\"><strong>Data Deleted Successfully</strong></div>";
                 header(
-  "Location:http://localhost/5StarTrading/view/index copy.php"
+  "Location:http://localhost/5StarTrading/view/view.php"
                 );
             } else {
                 // $_SESSION["status"] =
                 //     " <div id=\"delete-note-msg\" class=\"alert alert-success\" role=\"alert\"><strong>Please select a product to handle delete operation!</strong></div>";
                 header(
 
-                      "Location:http://localhost/5StarTrading/view/index copy.php"
+                      "Location:http://localhost/5StarTrading/view/view.php"
                 );
                 exit();
             }
